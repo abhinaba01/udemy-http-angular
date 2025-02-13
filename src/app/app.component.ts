@@ -18,10 +18,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.isLoading = true;
-    this.postService.fetchPosts().subscribe((posts) => {
-      this.isLoading = false;
-      this.loadedPosts = posts;
-    });
+    // this.postService.fetchPosts().subscribe((posts) => {
+    //   this.isLoading = false;
+    //   this.loadedPosts = posts;
+    // });
   }
 
   onCreatePost(postData: PostData) {

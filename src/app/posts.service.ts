@@ -29,7 +29,7 @@ export class PostsService {
       )
       .subscribe(
         (responseData) => {
-          console.log('responseData', responseData);
+          console.log('responseData in Post Service', responseData);
         },
         (error) => {
           console.log('Error Message', error.message);
